@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Matrix Multiplication</title>
+    <link rel="stylesheet" href="css/a.css">
+
+</head>
+<body >
+       <script type="text/javascript">
+           function validate() {
+               var num1=document.inputform.height1.value;
+               var num2=document.inputform.length2.value;
+               var num3=document.inputform.height2.value;
+               var num4=document.inputform.length1.value;
+               if((num1&&num2&&num3&&num4)==false){
+                   alert("请输入有效的行数和列数");
+                   return;
+               }
+               if(num1!=num2){
+                   alert("错误！左矩阵列数不等于右矩阵行数！")
+                   return;
+               }
+               document.inputform.submit();
+           }
+       </script>
+
+       <form action="index.jsp" method="post" name="inputform">
+           <table class="tab">
+
+               <tr><td>请输入第一个矩阵行数</td>
+                   <td><input type="text" name="length1" id="len1"></td></tr>
+               <tr><td>请输入第一个矩阵列数</td>
+                   <td><input type="text" name="height1" id="hei1"></td></tr>
+               <tr><td>请输入第二个矩阵行数</td>
+                   <td><input type="text" name="length2"></td></tr>
+               <tr><td>请输入第二个矩阵列数</td>
+                   <td><input type="text" name="height2"></td></tr>
+               <tr><td><input type="button" id="btn1" value="提交" onclick="validate()"></td></tr>
+           </table>
+       </form>
+</body>
+</html>

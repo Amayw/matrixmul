@@ -1,0 +1,63 @@
+body{
+    background-image:url('../img/p1.jpg');
+    background-size: 100%;
+}
+.tab{
+    text-align: center;
+    margin-top: 120px;
+    margin-left: 250px;
+    padding-top: 50px;
+}
+
+
+input[type="text"]{
+    text-align:center;
+    border-radius:4px;
+    border:1px solid #c8cccf;
+    color:#6a6f77;
+    display:block;
+    height: 25px;
+    outline: none;
+
+
+}
+
+input[type="text"]:focus{
+    border:1px solid #6a6f77;
+}
+
+input[type="button"]{
+    float:left;
+    margin-left:200px;
+    line-height: 1.2;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: right;
+    background-image: none;
+    /*border: 5px  transparent;*/
+    -webkit-box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    box-shadow: 0 2px 0 rgba(0,0,0,0.015);
+    cursor: pointer;
+    -webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    transition: all .3s cubic-bezier(.645, .045, .355, 1);
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    height: 32px;
+    padding: 0 15px;
+    font-size: 14px;
+    border-radius: 4px;
+    color: rgba(0,0,0,0.65);
+    border-color: #d9d9d9;
+}
+
+
+td
+{
+    padding:10px;
+}
